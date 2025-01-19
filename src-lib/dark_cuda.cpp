@@ -736,6 +736,7 @@ int get_gpu_compute_capability(int i, char *device_name)
 	return cc;
 }
 
+#ifndef DARKNET_GPU_ROCM
 void show_cuda_cudnn_info()
 {
 	TAT(TATPARMS);
@@ -815,6 +816,7 @@ void show_cuda_cudnn_info()
 		}
 	}
 }
+#endif
 
 #else // DARKNET_GPU
 

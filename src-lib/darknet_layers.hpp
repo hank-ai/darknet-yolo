@@ -13,6 +13,7 @@
  */
 
 #include "darknet_internal.hpp"
+#include "darknet_gpu.hpp"
 
 
 namespace Darknet
